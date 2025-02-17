@@ -7,19 +7,34 @@ const Footer = () => {
         <p>Privacy Policy</p>
       </div>
 
-      <div className="flex gap-3">
-        <div className="social-icon">
-          <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2" />
-        </div>
-        <div className="social-icon">
-          <img src="/assets/twitter.svg" alt="twitter" className="w-1/2 h-1/2" />
-        </div>
-        <div className="social-icon">
-          <img src="/assets/instagram.svg" alt="instagram" className="w-1/2 h-1/2" />
-        </div>
-      </div>
+      <div className="social-icons flex space-x-4">
+  <a href="https://github.com/Haben7" target="_blank" rel="noopener noreferrer" className="social-icon">
+    <img src="/assets/github.svg" alt="GitHub" className="w-1/2 h-1/2" />
+  </a>
 
-      <p className="text-white-500">© 2024 Adrian Hajdin. All rights reserved.</p>
+  <a href="https://gmail.com/orthodoxawit7@gmail.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+    <img src="/assets/google.svg" alt="Twitter" className="w-1/2 h-1/2" />
+  </a>
+
+  <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" className="social-icon">
+    <img src="/assets/instagram.svg" alt="Instagram" className="w-1/2 h-1/2" />
+  </a>
+
+  <a href="https://t.me/miracle_75" target="_blank" rel="noopener noreferrer" className="social-icon">
+    <img src="/assets/telegram.svg" alt="Telegram" className="w-1/2 h-1/2" />
+  </a>
+
+  <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener noreferrer" className="social-icon">
+    <img src="/assets/linkedin (1).svg" alt="LinkedIn" className="w-1/2 h-1/2" />
+  </a>
+
+  <a href="https://www.upwork.com/freelancers/~011f376a9fa2753362" target="_blank" rel="noopener noreferrer" className="social-icon">
+    <img src="/assets/upwork.png" alt="Upwork" className="w-1/2 h-1/2" />
+  </a>
+</div>
+
+
+      <p className="text-white-500">© 2025 Netsanet Melese. All rights reserved.</p>
     </footer>
   );
 };
