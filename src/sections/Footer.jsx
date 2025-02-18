@@ -12,25 +12,26 @@ const Footer = () => {
     <img src="/assets/github.svg" alt="GitHub" className="w-1/2 h-1/2" />
   </a>
 
-  <a href="https://gmail.com/orthodoxawit7@gmail.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-    <img src="/assets/google.svg" alt="Twitter" className="w-1/2 h-1/2" />
-  </a>
+  <a href="mailto:orthodoxawit7@gmail.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+  <img src="/assets/google.svg" alt="Gmail" className="w-1/2 h-1/2" />
+</a>
 
-  <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" className="social-icon">
-    <img src="/assets/instagram.svg" alt="Instagram" className="w-1/2 h-1/2" />
-  </a>
 
   <a href="https://t.me/miracle_75" target="_blank" rel="noopener noreferrer" className="social-icon">
     <img src="/assets/telegram.svg" alt="Telegram" className="w-1/2 h-1/2" />
   </a>
 
-  <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener noreferrer" className="social-icon">
+  <a href="https://www.linkedin.com/in/netsanet-melese-3ba77025a/" target="_blank" rel="noopener noreferrer" className="social-icon">
     <img src="/assets/linkedin (1).svg" alt="LinkedIn" className="w-1/2 h-1/2" />
   </a>
 
-  <a href="https://www.upwork.com/freelancers/~011f376a9fa2753362" target="_blank" rel="noopener noreferrer" className="social-icon">
+  <a href="https://www.upwork.com/freelancers/~011f376a9fa2753362?mp_source=share" target="_blank" rel="noopener noreferrer" className="social-icon">
     <img src="/assets/upwork.png" alt="Upwork" className="w-1/2 h-1/2" />
   </a>
+  <a href="https://wa.me/+251948116392" target="_blank" rel="noopener noreferrer" className="social-icon">
+  <img src="/assets/whatsapp.png" alt="WhatsApp" className="w-1/2 h-1/2" />
+</a>
+
 </div>
 
 

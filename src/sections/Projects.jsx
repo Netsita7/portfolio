@@ -15,17 +15,26 @@ const Projects = () => {
 
   const handleNavigation = (direction) => {
     setSelectedProjectIndex((prevIndex) => {
-      if (direction === 'previous') {
-        return prevIndex === 0 ? projectCount - 1 : prevIndex - 1;
-      } else {
-        return prevIndex === projectCount - 1 ? 0 : prevIndex + 1;
-      }
+      const newIndex = direction === 'previous' 
+        ? (prevIndex === 0 ? projectCount - 1 : prevIndex - 1) 
+        : (prevIndex === projectCount - 1 ? 0 : prevIndex + 1);
+
+      console.log(`Direction: ${direction}, New Index: ${newIndex}`); // Debugging
+      return newIndex;
     });
   };
 
   useGSAP(() => {
-    gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 0.2, ease: 'power2.inOut' });
+    console.log('GSAP animation triggered'); // Debugging
+    gsap.fromTo(
+      `.animatedText`, 
+      { opacity: 0 }, 
+      { opacity: 1, duration: 1, stagger: 0.2, ease: 'power2.inOut' }
+    );
   }, [selectedProjectIndex]);
+
+  console.log(`Rendered with project index: ${selectedProjectIndex}`); // Debugging
+  console.log(myProjects); // Debugging
 
   const currentProject = myProjects[selectedProjectIndex];
 
@@ -45,7 +54,6 @@ const Projects = () => {
 
           <div className="flex flex-col gap-5 text-white-600 my-5">
             <p className="text-white text-2xl font-semibold animatedText">{currentProject.title}</p>
-
             <p className="animatedText">{currentProject.desc}</p>
             <p className="animatedText">{currentProject.subdesc}</p>
           </div>
@@ -58,7 +66,7 @@ const Projects = () => {
                 </div>
               ))}
             </div>
-
+{/* 
             <a
               className="flex items-center gap-2 cursor-pointer text-white-600"
               href={currentProject.href}
@@ -66,16 +74,16 @@ const Projects = () => {
               rel="noreferrer">
               <p>Check Live Site</p>
               <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
-            </a>
+            </a> */}
           </div>
 
           <div className="flex justify-between items-center mt-7">
             <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
-              <img src="/assets/left-arrow.png" alt="left arrow" />
+              <img src="/assets/back-button.png" alt="left arrow" className="w-32 h-6"  />
             </button>
 
             <button className="arrow-btn" onClick={() => handleNavigation('next')}>
-              <img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4" />
+              <img src="/assets/right.png" alt="right arrow" className="w-32 h-6" />
             </button>
           </div>
         </div>
@@ -98,5 +106,4 @@ const Projects = () => {
     </section>
   );
 };
-
 export default Projects;
