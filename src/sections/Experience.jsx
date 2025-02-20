@@ -12,20 +12,15 @@ const WorkExperience = () => {
   return (
     <section className="c-space my-20" id="work">
       <div className="w-full text-white-600">
-        <p className="head-text">My Work Experience</p>
+        <p className="head-text">My journey</p>
 
         <div className="work-container">
           <div className="work-canvas">
-            <Canvas>
-              <ambientLight intensity={7} />
-              <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-              <directionalLight position={[10, 10, 10]} intensity={1} />
-              <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
-
-              <Suspense fallback={<CanvasLoader />}>
-                <Developer position-y={-3} scale={3} animationName={animationName} />
-              </Suspense>
-            </Canvas>
+            <img 
+              src="public/assets/Screenshot_20240517-212927_Video Player.jpg"  
+              alt="Work Experience"    
+              className="w-full h-auto" 
+            />
           </div>
 
           <div className="work-content">

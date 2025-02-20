@@ -16,6 +16,10 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
+//service_csjkm0c
+//template_puaxh9d
+// public key VLRnH-ZVq79czfLiG
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -65,68 +69,74 @@ const Contact = () => {
   };
 
   return (
-    <section className="c-space my-20" id="contact">
-      {alert.show && <Alert {...alert} />}
+<section className="c-space my-12 sm:my-16 md:my-20 lg:my-28 px-4 sm:px-8" id="contact">
+  {alert.show && <Alert {...alert} />}
 
-      <div className="relative min-h-screen flex items-center justify-center flex-col">
-        <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-screen" />
+  <div className="relative min-h-screen flex flex-col items-center justify-center">
+    {/* Background Image - Make It Responsive */}
+    <img
+      src="/assets/terminal.png"
+      alt="terminal-bg"
+      className="absolute inset-0 w-full h-full object-cover opacity-20 sm:opacity-40"
+    />
 
-        <div className="contact-container">
-          <h3 className="head-text mt-12">Let's talk</h3>
-          <p className="text-lg text-white-600 mt-3">
-            Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
-            life, I’m here to help.
-          </p>
+    <div className="contact-container relative z-10 p-6 sm:p-10 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg max-w-lg sm:max-w-2xl">
+      <h3 className="head-text mt-6 text-center">Let's talk</h3>
+      <p className="text-lg text-white-600 mt-3 text-center">
+        Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
+        life, I’m here to help.
+      </p>
 
-          <form ref={formRef} onSubmit={handleSubmit} className="mt-8 flex flex-col space-y-7">
-            <label className="space-y-3">
-              <span className="field-label">Full Name</span>
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                required
-                className="field-input"
-                placeholder="ex., John Doe"
-              />
-            </label>
+      {/* Form */}
+      <form ref={formRef} onSubmit={handleSubmit} className="mt-8 flex flex-col space-y-6">
+        <label className="space-y-2">
+          <span className="field-label">Full Name</span>
+          <input
+            type="text"
+            name="name"
+            value={form.name}
+            onChange={handleChange}
+            required
+            className="field-input"
+            placeholder="ex., John Doe"
+          />
+        </label>
 
-            <label className="space-y-3">
-              <span className="field-label">Email address</span>
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                required
-                className="field-input"
-                placeholder="ex., johndoe@gmail.com"
-              />
-            </label>
+        <label className="space-y-2">
+          <span className="field-label">Email address</span>
+          <input
+            type="email"
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            required
+            className="field-input"
+            placeholder="ex., johndoe@gmail.com"
+          />
+        </label>
 
-            <label className="space-y-3">
-              <span className="field-label">Your message</span>
-              <textarea
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                required
-                rows={5}
-                className="field-input"
-                placeholder="Share your thoughts or inquiries..."
-              />
-            </label>
+        <label className="space-y-2">
+          <span className="field-label">Your message</span>
+          <textarea
+            name="message"
+            value={form.message}
+            onChange={handleChange}
+            required
+            rows={5}
+            className="field-input"
+            placeholder="Share your thoughts or inquiries..."
+          />
+        </label>
 
-            <button className="field-btn" type="submit" disabled={loading}>
-              {loading ? 'Sending...' : 'Send Message'}
+        <button className="field-btn" type="submit" disabled={loading}>
+          {loading ? 'Sending...' : 'Send Message'}
+          <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
 
-              <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
   );
 };
 
