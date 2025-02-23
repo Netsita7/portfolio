@@ -17,7 +17,7 @@ const WorkExperience = () => {
         <div className="work-container">
           <div className="work-canvas">
             <img 
-              src="public/assets/Screenshot_20240517-212927_Video Player.jpg"  
+              src="/assets/Screenshot_20240517-212927_Video Player.jpg"  
               alt="Work Experience"    
               className="w-full h-auto" 
             />
