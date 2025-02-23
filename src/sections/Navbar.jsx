@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
-
+  
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/90">
       <div className="max-w-7xl mx-auto">
@@ -37,6 +37,7 @@ const Navbar = () => {
 
           <nav className="sm:flex hidden">
             <NavItems />
+
           </nav>
         </div>
       </div>

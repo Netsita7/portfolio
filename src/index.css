@@ -169,7 +169,7 @@ body {
   );
 }
 
-.work-canvas {
+/* .work-canvas {
   perspective: 1000px; 
   display: flex;
   justify-content: center;
@@ -185,7 +185,7 @@ body {
 
 .work-canvas:hover img {
   transform: rotateY(180deg) rotateX(10deg) scale(1.05);
-}
+} */
 
 
 

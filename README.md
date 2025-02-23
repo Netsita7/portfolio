@@ -1,4 +1,4 @@
-<div align="center">
+<!-- <div align="center">
   <br />
     <a href="https://youtu.be/kt0FrkQgw8w" target="_blank">
       <img src="https://github.com/user-attachments/assets/2afc2dc3-f840-4d98-9378-f34acd7df173" alt="Project Banner">
@@ -879,4 +879,4 @@ Enjoyed creating this project? Dive deeper into our PRO courses for a richer lea
 
 <a href="https://www.jsmastery.pro/ultimate-next-course" target="_blank">
 <img src="https://i.ibb.co/804sPK6/Image-720.png" alt="Project Banner">
-</a>
+</a> -->
