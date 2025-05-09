@@ -81,7 +81,7 @@ const Contact = () => {
     />
 
     <div className="contact-container relative z-10 p-6 sm:p-10 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg max-w-lg sm:max-w-2xl">
-      <h3 className="head-text mt-6 text-center">Let's talk</h3>
+      <h3 className="head-text mt-6 text-center"> Let’s talk</h3>
       <p className="text-lg text-white-600 mt-3 text-center">
         Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
         life, I’m here to help.
@@ -98,7 +98,7 @@ const Contact = () => {
             onChange={handleChange}
             required
             className="field-input"
-            placeholder="ex., Melese Tadesse"
+            placeholder="eg. Melese Tadesse"
           />
         </label>
 
@@ -111,7 +111,7 @@ const Contact = () => {
             onChange={handleChange}
             required
             className="field-input"
-            placeholder="ex., MeleseTadesse@gmail.com"
+            placeholder="eg. MeleseTadesse@gmail.com"
           />
         </label>
 
