@@ -15,7 +15,7 @@ const WorkExperience = () => {
         <p className="head-text">My journey</p>
 
         <div className="work-container">
-          <div className="work-canvas">
+          <div className="work-canvas mt-20">
             <img 
               src="/assets/Screenshot_20240517-212927_Video Player.jpg"  
               alt="Work Experience"    
