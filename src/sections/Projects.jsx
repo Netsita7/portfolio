@@ -39,7 +39,7 @@ const Projects = () => {
   const currentProject = myProjects[selectedProjectIndex];
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id='project'>
       <p className="head-text">My Selected Work</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
@@ -78,25 +78,16 @@ const Projects = () => {
           </div>
 
           <div className="flex justify-between items-center mt-7">
-          <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
+            {/* <button className="arrow-btn" onClick={() => handleNavigation('previous')}> */}
 
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-red-500" fill="currentColor" viewBox="0 0 24 24">
-  <path d="M15 18l-6-6 6-6" />
-</svg>
-</button>
-<button className="arrow-btn" onClick={() => handleNavigation('next')}>
+              <svg xmlns="http://www.w3.org/2000/svg" className="arrow-btn w-10 h-10 text-red-500" onClick={() => handleNavigation('previous')} fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="4"/>
+              </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-red-500" fill="currentColor" viewBox="0 0 24 24">
-  <path d="M9 6l6 6-6 6" />
-</svg>
-</button>
-            {/* <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
-              <img src="/assets/back-button.png" alt="left arrow" className="w-32 h-4 " />
-            </button>
-
-            <button className="arrow-btn" onClick={() => handleNavigation('next')}>
-              <img src="/assets/right.png" alt="right arrow" className="w-32 h-4" />
-            </button> */}
+              <svg xmlns="http://www.w3.org/2000/svg" className="arrow-btn w-10 h-10 text-red-500" onClick={() => handleNavigation('next')} fill="none" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="4"/>
+              </svg>
+            {/* </button> */}
           </div>
         </div>
 

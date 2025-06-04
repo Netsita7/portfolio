@@ -16,7 +16,13 @@ export const navLinks = [
   },
   {
     id: 4,
-    name: 'Contact',
+    name: 'Project',
+    href: '#project',
+   
+  },
+  {
+    id: 5,
+     name: 'Contact',
     href: '#contact',
   },
  
@@ -59,6 +65,80 @@ export const clientReviews = [
 ];
 
 export const myProjects = [
+  {
+    title: 'Debre Markos University Website Enhancement',
+desc: 'This is a group project aimed to improve the university’s outdated and inefficient website, which faced frequent complaints from students, staff and public visitors.',
+subdesc: 
+'The platform simplifies information access for users, including academic updates, dormitory placements, and university news, while also supporting one-click publishing to platforms like Telegram and Facebook. It includes integration with the SIMS grade viewing system (verified with demo data). Built with React, TypeScript, Node.js, Express, and Tailwind CSS, the system is modern, scalable, and user-friendly.',
+    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+    texture: '/textures/project/project5.mp4',
+    logo: '/assets/dmu.png',
+    logoStyle: {
+      backgroundColor: '#2A1816',
+      border: '0.2px solid #36201D',
+      boxShadow: '0px 0px 60px 0px #AA3C304D',
+    },
+    spotlight: '/assets/spotlight1.png',
+    tags: [
+       {
+        id: 3,
+        name: 'node',
+        path: '/assets/no.png',
+      },
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 4,
+        name: 'mongodb',
+        path: '/assets/mo.png',
+      },
+     
+    ],
+  },
+
+
+  {
+    title: 'GymPrime ',
+    desc:'GymPrime is an all-in-one Gym Management System built to streamline day-to-day operations and enhance user experience. Through a clean and responsive interface, users can easily explore available plans, view trainers, and register for memberships online.',
+subdesc: 
+'The platform also includes a comprehensive backend dashboard that allows efficient management of memberships, staff schedules, attendance, and equipment tracking. Developed with Laravel 11 GymPrime offers a scalable and high-performance solution for fitness centers aiming to digitize and simplify their services.',
+    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+    texture: '/textures/project/project4.mp4',
+    logo: '/assets/gym.png',
+    logoStyle: {
+      backgroundColor: '#2A1816',
+      border: '0.2px solid #36201D',
+      boxShadow: '0px 0px 60px 0px #AA3C304D',
+    },
+    spotlight: '/assets/spotlight1.png',
+    tags: [
+      {
+        id: 3,
+        name: 'Laravel',
+        path: '/assets/laravel-brands-solid.svg',
+      },
+      
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 4,
+        name: 'mysql',
+        path: 'assets/icons8-mysql-logo-48.png',
+      },
+     
+    ],
+  },
   {
     title: 'Real Estate -  Real Estate Listing Platform',
 desc: 'It is a cutting-edge Software-as-a-Service platform that revolutionizes the way real estate listings are managed. It allows different real estate owners to register, list their properties, and connect with potential buyers or renters seamlessly.',
@@ -263,9 +343,18 @@ export const workExperiences = [
     id: 1,
     name: 'Debre Markos University',
     pos: 'Software Engineering Student',
-    duration: '2021 - Present',
+    duration: '2021 - 06/2025',
     title: "I pass my time learning software engineering at Debremarkos University, exploring various tools and concepts to deepen my understanding and skills in the field.",
     icon: '/assets/d1.png',
+    animation: 'victory',
+  },
+  {
+    id: 4,
+    name: 'Remote| Hired via LinkedIn',
+    pos: 'Virtual Assistant & Web Developer',
+    duration: '',
+    title: "Worked as a Virtual Assistant handling job applications and client communication, later completing various tasks with positive feedback.",
+    icon: '/assets/free.png',
     animation: 'victory',
   },
   {
